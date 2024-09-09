@@ -1,0 +1,103 @@
+
+.first{
+    position: static;
+}
+.first-container{
+    background-color: rgb(32, 27, 54);
+    height: 450px;
+    display: flex;
+    
+}
+.head{
+    background: linear-gradient(90.02deg, #9b7dcb 7.51%, #3e0268 98.23%);
+    padding: 5px;
+    margin-top: 5px;
+}
+.home-head{
+    color: white;
+    float: right;
+    /* color: radial-gradient(66.38% 101.85% at 50.21% 11.11%, #d4c7dd 0%, #9499b3 100%); */
+    /* margin: 10px 10px; */
+    font-size: 80px;
+    padding-top: 200px;
+    padding-right: 400px;
+    text-shadow: 0px 0px 150px #E7F0FF;
+    
+}
+
+.first-container img{
+    height: 360px;
+    padding-left: 100px;
+    padding-top: 150px; 
+    
+    
+}
+
+.first-container p{
+    color: white;
+    float: right;
+    margin: 50px auto ;
+    font-size: 22px;
+    padding-top: 50px;
+    padding-right: 421px;
+    margin-top: -220px;
+    text-shadow: 0px 0px 30px #E7F0FF;;
+}
+.second-container{
+    background: radial-gradient(66.38% 101.85% at 50.21% 11.11%, #9041ff 0%, #39124d 100%);
+    margin-top: -10px;
+}
+.box{
+    height: 300px;
+    width: 290px;
+    margin: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.row1 ,.row2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h1-second-container{
+    padding: 5px;
+    color: white;
+    font-size: 27px;
+}
+.img-printer{
+    align-items: center;
+    height: 220px;
+}
+.row1  a{
+    display: flex;
+    color: rgb(244, 242, 242);
+    font-size: 30px;
+    justify-content: center;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+}
+.row2  a{
+    display: flex;
+    color: rgb(244, 242, 242);
+    font-size: 30px;
+    justify-content: center;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+}
+.third-container{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+.box img{
+    height: 220px;
+}
+
