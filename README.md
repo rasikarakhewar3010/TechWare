@@ -1,4 +1,4 @@
-# 🚀 TechWare - Your Ultimate Guide to Computer Hardware 🖥️💻
+# 🚀 TechWare - Guide to Computer Hardware 🖥️💻
 
 Welcome to **TechWare**! 🎉 Your go-to 🌐 website for all things computer hardware! Whether you're a tech enthusiast, a budding PC builder, or just curious about the latest gadgets, we've got you covered with the most up-to-date and detailed information on a wide array of hardware components.
 
