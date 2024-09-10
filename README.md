@@ -6,3 +6,9 @@ Welcome to **TechWare**! 🎉 Your go-to 🌐 website for all things computer ha
 
 - **Comprehensive Hardware Guides:** From CPUs to GPUs, motherboards to storage devices, explore detailed specs, features, and comparisons.
 - **Easy-to-Understand Info:** Whether you’re a newbie or a tech pro, our content is designed to be accessible and informative.
+
+## Overview 
+
+https://github.com/user-attachments/assets/69963681-02fa-4939-a8dc-760142932b0b
+
+
