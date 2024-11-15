@@ -12,9 +12,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-color:  rgb(20, 17, 37);
-  color: #f3f0f0;
-  overflow: scroll;
-   
+  color: #f3f0f0;   
 }
 .logo-container {
   position: absolute;
