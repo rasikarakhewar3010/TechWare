@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/css1.css">
+    <link rel="icon" href="/assets/img/TechWare-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>TechWare</title>
+    <style>
+        body {
+            background: linear-gradient(-45deg, #7d2b96, #af80e5, #ab23d5, #23d5ab);
+            background-size: 3000% 3000%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .hide-btn {
+            padding: 5px 6px;
+            margin: 5px;
+            width: 80px;
+            height: 35px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="/assets/img/TechWare-logo.jpg" alt="TechWare Logo" class="logo">
+        <h1>TechWare</h1>
+    </header>
+
+    <main>
+        <hr>
+        <section class="box1">
+            <a href="./index.html">Home</a>
+            <a href="./_con.html">Contact Us</a>
+            <a href="./Exercises.html">Exercise</a>
+            <a href="./3D_Animation.html">Gallery</a>
+        </section>
+        <hr>
+
+        <button id="hideButton" class="hide-btn">Menu</button>
+        <aside id="asideSection">
+            <section class="box2">
+                <a href="./rom.html">ROM</a>
+                <hr>
+                <a href="#">CPU</a>
+                <hr>
+                <a href="#">MOUSE</a>
+                <hr>
+                <a href="./motherboard.html">MOTHERBOARD</a>
+                <hr>
+                <a href="./ram.html">RAM</a>
+                <hr>
+                <a href="#">PRINTER</a>
+            </section>
+        </aside>
+        
+        <div class="content">
+            <div class="rom" id="rom">
+                <div data-aos="slide-up">
+                    <h1>ROM (Read-Only Memory)</h1>
+                    <p>
+                        ROM, or Read-Only Memory, is a type of non-volatile storage that is used to store firmware or software that is permanently programmed into the memory at the time of manufacture. It retains its data even when the device is powered off, making it essential for boot processes in computers and other devices.
+                    </p><br>
+                    <p class="video-reference"><b>Refer this video</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XY2ShCWfc-E" frameborder="0" allowfullscreen></iframe>
+                    <br>
+                    <a href="/assets/video/ROM_video.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+                
+                <div class="history" data-aos="slide-up">
+                    <h1>History of ROM:</h1>
+                    <p>
+                        The concept of ROM has existed since the early days of computing, initially used in simple digital circuits. With the advent of integrated circuits, ROM became more sophisticated and was used in early computers to store essential instructions. Over the years, types of ROM, like PROM, EPROM, and EEPROM, were developed to allow some flexibility in programming.
+                    </p><br>
+                    <p class="video-reference"><b>Refer this video</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1z3cEnwKrM0" frameborder="0" allowfullscreen></iframe>
+                    <br>
+                    <a href="./ROM_history_video.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+                
+                <div class="type" data-aos="slide-up">
+                    <h1>Types of ROM:</h1>
+                    <p>
+                        1. Mask ROM: Programmed during the manufacturing process and cannot be altered.
+                        2. PROM (Programmable ROM): Can be programmed once after manufacturing; used in devices requiring specific firmware.
+                        3. EPROM (Erasable Programmable ROM): Can be erased and reprogrammed using UV light, offering limited flexibility.
+                        4. EEPROM (Electrically Erasable Programmable ROM): Can be erased and reprogrammed electrically, making it more versatile and widely used.
+                    </p><br>
+                    <p class="video-reference"><b>Refer this video</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3ndSKKaTx0o" frameborder="0" allowfullscreen></iframe>
+                    <br>
+                    <a href="./ROM_types_video.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+                
+                <div class="work" data-aos="slide-up">
+                    <h1>Structure and Working of ROM:</h1>
+                    <p>
+                        ROM consists of a matrix of storage cells that hold data permanently. When data is required, it is accessed through specific address lines that retrieve the stored information. Since ROM is non-volatile, it does not lose data when the power is off. The working of ROM is simple and efficient, allowing devices to boot and perform essential functions reliably.
+                    </p><br>
+                    <p class="video-reference"><b>Refer this video</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/h9eT8Q1h6j4" frameborder="0" allowfullscreen></iframe>
+                    <br>
+                    <a href="./ROM_working_video.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="/assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

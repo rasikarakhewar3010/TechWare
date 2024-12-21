@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/css1.css">
+    <link rel="icon" href="./assets/img/TechWare-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>TechWare</title>
+    <style>
+        body {
+            background: linear-gradient(-45deg, #7d2b96, #af80e5, #ab23d5, #23d5ab);
+            background-size: 3000% 3000%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .hide-btn {
+            padding: 5px 6px;
+            margin: 5px;
+            width: 80px;
+            height: 35px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="./assets/img/TechWare-logo.jpg" alt="TechWare Logo" class="logo">
+        <h1>TechWare</h1>
+    </header>
+
+    <main>
+        <hr>
+        <section class="box1">
+            <a href="./index.html">Home</a>
+            <a href="./_con.html">Contact Us</a>
+            <a href="./Exercises.html">Exercise</a>
+            <a href="./3D_Animation.html">Gallery</a>
+        </section>
+        <hr>
+
+        <button id="hideButton" class="hide-btn">Menu</button>
+        <aside id="asideSection">
+            <section class="box2">
+                <a href="./harddrive.html">HARD DRIVE</a>
+                <hr>
+                <a href="#">CPU</a>
+                <hr>
+                <a href="#">MOUSE</a>
+                <hr>
+                <a href="./motherboard.html">MOTHERBOARD</a>
+                <hr>
+                <a href="./ram.html">RAM</a>
+                <hr>
+                <a href="#">ROM</a>
+            </section>
+        </aside>
+        
+        <div class="content">
+            <div class="hard-drive" id="hard-drive">
+                <div data-aos="slide-up">
+                    <h1>Hard Drive</h1>
+                    <p>
+                        A hard drive (HDD) is a data storage device used for storing and retrieving digital information. It uses magnetic storage to store data on rotating platters. Hard drives are commonly used in computers and servers to store operating systems, applications, and user data.
+                    </p><br>
+                    <p class="video-reference"><b>Refer this video</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8DUEAG5eO6c" frameborder="0" allowfullscreen></iframe>
+                    <br>
+                    <a href="/assets/video/HardDrive_video.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+                
+                <div class="history" data-aos="slide-up">
+                    <h1>History of Hard Drives:</h1>
+                    <p>
+                        Hard drives were introduced by IBM in 1956 as the IBM 305 RAMAC. The early models were large and expensive, capable of storing only a few megabytes. Over the decades, advancements in technology have drastically increased their storage capacity, speed, and reliability while reducing their size and cost.
+                    </p><br>
+                    <p class="video-reference"><b>Refer this video</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u1n0LxsIC3U" frameborder="0" allowfullscreen></iframe>
+                    <br>
+                    <a href="./HardDrive_history_video.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+                
+                <div class="type" data-aos="slide-up">
+                    <h1>Types of Hard Drives:</h1>
+                    <p>
+                        1. SATA (Serial ATA): Commonly used in desktops and laptops for data storage due to its affordability and reliable performance.  
+                        2. SSD (Solid State Drive): Faster and more durable than traditional HDDs as they have no moving parts. SSDs use flash memory for storage.  
+                        3. Hybrid Drives: Combine the high speed of SSDs with the large storage capacity of HDDs, providing a balanced solution.  
+                        4. External Hard Drives: Portable devices used for backups and data transfer.  
+                    </p><br>
+                    <p class="video-reference"><b>Refer this video</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rcJl93Nz6ZI" frameborder="0" allowfullscreen></iframe>
+                    <br>
+                    <a href="./HardDrive_types_video.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+                
+                <div class="work" data-aos="slide-up">
+                    <h1>Structure and Working of a Hard Drive:</h1>
+                    <p>
+                        A hard drive consists of the following main components:  
+                        - Platters: Magnetic disks where data is stored.  
+                        - Read/Write Head: Moves across the platters to read or write data.  
+                        - Actuator: Positions the read/write head.  
+                        - Spindle: Spins the platters at high speed.  
+                        - Controller Board: Manages the operations of the hard drive and communicates with the computer.  
+
+                        Data is written on and read from the platters in binary form. The spinning platters and read/write head enable quick access to stored data.
+                    </p><br>
+                    <p class="video-reference"><b>Refer this video</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kqluIVxF-eU" frameborder="0" allowfullscreen></iframe>
+                    <br>
+                    <a href="./HardDrive_working_video.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

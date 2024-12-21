@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/css1.css">
+    <link rel="icon" href="./assets/img/TechWare-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>TechWare</title>
+    <style>
+        body {
+  background: linear-gradient(-45deg, #7d2b96, #af80e5, #ab23d5, #23d5ab);
+  background-size: 3000% 3000%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.hide-btn{
+    padding: 5px 6px;
+    margin: 5px;
+    width: 80px;
+    height: 35px;
+    font-weight: bold;
+    
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+}
+    </style>
+    
+
+</head>
+<body>
+    
+    <header>
+        <img src="./assets/img/TechWare-logo.jpg" alt="TechWare Logo" class="logo">
+        <nav>
+            <a href="./login.html" class="login" target="_top">Login/Sign Up</a>
+            <button onclick="lightMode()" class="login">Light Mode</button>
+            <button onclick="darkMode()" class="login">Dark Mode</button>
+            
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>TechWare</h1>
+        <hr>
+        
+        <section class="box1">
+            <a href="./index.html">Home</a>
+            <a href="#">Contact Us</a>
+            <a href="./Exercises.html">Exercise</a>
+            <a href="#">Goal</a>
+        </section>
+        <hr>
+        
+        <button id="hideButton" class="hide-btn">Menu</button>
+<aside id="asideSection">
+    <section class="box2">
+        <a href="./index.html">PRINTER</a>
+        <hr>
+        <a href="#">CPU</a>
+        <hr>
+        <a href="#">MOUSE</a>
+        <hr>
+        <a href="#">MEMORY CARD</a>
+        <hr>
+        <a href="./ram.html">RAM</a>
+        <hr>
+        <a href="#">ROM</a>
+    </section>
+</aside>
+<div class="logo-container"></div>
+        <div class="content">
+            <div class="printer" id="print">
+                <h1>
+                    RAM
+                </h1>
+                <p>
+                    RAM (which stands for Random Access Memory) is the familiar acronym for random access memory, which is the temporary storage in your computer that gives applications a place to store and access data on a short-term basis. Having more RAM means that more data can be accessed and read almost instantly, as opposed to being written on your hard drive or SSD. 
+
+
+                </p><br>
+                <p class="video-reference">
+                    <b>
+                        Refer this video
+                    </b>
+                </p>
+                 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dgMeWRy84l8?si=gmi6H0bixZYZbmHp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <a href="./Printer_video(1).mp4" download="video" class="download-btn">
+                    Download
+                    <i class="fa fa-download"></i>
+                </a>
+            
+                <div class="history" data-aos="slide-up">
+                <h1>
+                    What does RAM do
+                </h1>
+                <p>
+                  <p>
+                    RAM allows your computer to perform most of its everyday tasks, such as loading applications, browsing the internet, editing a spreadsheet, or experiencing the latest game. Memory also allows you to switch quickly among these tasks while also remembering where you are in each task. Generally speaking, the more memory you have, the better for multitasking.
+                  </p>
+                  <p>
+                    As an example of how this works, when you turn on your computer, check your email, and then edit a spreadsheet, you'll have used memory in several different ways:
+                  </p>
+                  <p>
+                    <ul>
+                        <li>to load and run apps like your spreadsheet program and email</li>
+                        <li>to respond to commands, like deleting an email and editing the spreadsheet</li>
+                        <li>to toggle between your open programs, like going back and forth from the spreadsheet to check your email</li>
+                    </ul>
+                  </p>
+                  <p>
+                    In a way, memory is like the top of your desk. It allows you to work on various projects at once. The larger your desk, the more papers, folders, and tasks you can have out at one time. You can quickly and easily access the information without having to thumb through a filing cabinet (your storage drive).
+                  </p>
+                </p><br>
+                <p class="video-reference">
+                    <b>
+                        Refer this video
+                    </b>
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c8a_4OpWIWQ?si=ZbgwSuZX-bGRvd6-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <a href="./Printer_video(1).mp4" download="video" class="download-btn">
+                    Download
+                    <i class="fa fa-download"></i>
+                </a>
+            </div>
+            <div class="type" data-aos="slide-up">
+        
+                <h1>
+                    Types of RAM:
+                </h1>
+                <p>
+                    <p>Computer RAM is a critical component in a computer system, providing volatile storage that the processor uses to temporarily store and access data quickly. There are several types of RAM, each with its unique characteristics and use cases. </p>
+                    <h3>Dynamic random access memory (DRAM)</h3>
+                    <p>
+                        Dynamic RAM is one of the most common types of RAM used in computers. It stores each bit of data in a separate capacitor within an integrated circuit. However, DRAM needs to be constantly refreshed to retain data, which can impact its speed compared to other types. 
+                    </p>
+                    <h3>Static random access memory (SRAM)</h3>
+                    <p>SRAM is faster than DRAM and doesn't require constant refreshing, as it stores each bit using a flip-flop circuit. Due to its faster access times, SRAM is often used in cache memory to provide quick access to frequently used instructions and data.</p>
+                    <h3>Synchronous dynamic random access memory (SDRAM)</h3>
+                    <p>
+                        SDRAM synchronizes with the system's clock speed, allowing for more efficient data transfers. This synchronization enables a steady flow of data, reducing delays in accessing information. Various types of SDRAM, such as double data rate (DDR) SDRAM, have evolved to provide increased data transfer rates. 
+                    </p>
+                    <h3>
+                        Double data rate (DDR) synchronous dynamic random access memory
+                    </h3>
+                    <p>
+                        DDR SDRAM transfers data on both the rising and falling edges of the clock signal, effectively doubling the data transfer rate compared to traditional SDRAM. DDR RAM has undergone several generations, with each iteration (such as DDR3, DDR4 and DDR5) offering increased performance and efficiency. 
+                    </p>
+                    <h3>
+                        Graphics double data rate (GDDR) synchronous graphics random access memory
+                    </h3>
+                    <p>
+                        Specifically designed for graphics processing units (GPUs), GDDR SDRAM focuses on high-speed data transfer to support the demands of graphics-intensive applications like gaming and video rendering. Similar to DDR RAM, GDDR has seen multiple generations, each enhancing memory bandwidth and performance. 
+                    </p>
+                    <h3>
+                        Non-volatile dual in-line memory module (NVDIMM)
+                    </h3>
+                    <p>
+                        While most RAM is volatile and loses data when power is cut, NVDIMM combines the speed of traditional RAM with the non-volatility of storage. It retains data even when the system is powered off, making it suitable for applications where persistent memory is crucial. 
+                    </p>
+
+                </p><br>
+                <!-- <p class="video-reference">
+                    <b>
+                        Refer this video
+                    </b>
+                </p>
+                
+                <iframe
+                    width="560" height="315" src="https://www.youtube.com/embed/JEVurb1uVFA" frameborder="0" allowfullscreen>
+                </iframe>
+                <br>
+                <a href="./Printer_video(1).mp4" download="video" class="download-btn">
+                    Download
+                    <i class="fa fa-download"></i>
+                </a> -->
+            </div>
+            <div class="work" data-aos="slide-up">
+                <h1>
+                    RAM vs. ROM
+                </h1>
+                <p>
+                    Read-only memory, commonly known as ROM, is a type of non-volatile computer memory that retains its stored data even when the power is turned off. As the name suggests, the content in ROM is typically "read-only," meaning it is challenging to modify or overwrite. ROM is used to store firmware, basic input/output system/unified extensible firmware interface (BIOS/UEFI), and other essential system instructions that are crucial for the initial boot up of a computer and the fundamental functionality of its hardware components. RAM is volatile, meaning it loses its stored data when the power is turned off or interrupted. This characteristic is a result of how RAM functions at the hardware level. RAM is designed for rapid read and write access, making it well suited for temporarily storing data that the computer's processor actively uses during its operation. The volatility of RAM allows for quick data access and manipulation while requiring a continuous power supply to maintain the stored information. Once the power is cut, the contents of RAM are wiped clean. ROM predates RAM. ROM was one of the earliest forms of memory used in early computer systems to store basic instructions and firmware required for booting up the system. RAM, on the other hand, came later as a solution for providing fast, volatile storage that the processor could use for actively processed data during a computer's operation. RAM allows for both reading and writing data, providing dynamic and quick access to information that's lost when the power is turned off.
+                </p><br>
+                <p class="video-reference">
+                    <b>
+                        Refer this video
+                    </b>
+                </p>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CBa7JojXvgk?si=krn9guSssXG1Xxfn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                
+                <a href="./Printer_video(1).mp4" download="video" class="download-btn">
+                    Download
+                    <i class="fa fa-download"></i>
+
+                </a>
+            </div>
+            <div class="work" data-aos="slide-up">
+                <h1>
+                    Do you need to upgrade your RAM?
+                </h1>
+                <p>
+                    Whether you are a gamer, designer, or just looking to speed up your personal computer, upgrading RAM is a simple and easy way to boost your system performance. To determine the right kind of memory for your computer, use the Crucial® System Selector or the Upgrade Selector. These tools will help you determine which memory modules are compatible with your computer and provide options for your speed requirements and budget.
+                </p><br>
+                <p class="video-reference">
+                    <b>
+                        Refer this video
+                    </b>
+                </p>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vswCwGCMQY0?si=ihJWl6tbTiXlBTJ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <a href="./Printer_video(1).mp4" download="video" class="download-btn">
+                    Download
+                    <i class="fa fa-download"></i>
+
+                </a>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

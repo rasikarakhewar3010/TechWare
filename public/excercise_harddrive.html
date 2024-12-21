@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWare/exercise/Hard Drive</title>
+    <link rel="stylesheet" href="./assets/css/exercise_printer.css">
+    <link rel="icon" href="./assets/img/TechWare-logo.jpg">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Hard Drive</h1>
+        <div class="timer">Time left: 10 seconds</div>
+        <h2 class="question"></h2>
+        <div class="options"> </div>
+        <button class="next-btn">Next</button>
+    </div>
+    <div class="quiz-result">
+        <h2>You Have 4 out of 5</h2>
+        <div class="question-container">
+            <div class="question">Which storage device uses magnetic disks to store data?</div>
+            <div class="user-answer">Your answer: Not answered</div>
+            <div class="correct-answer">Correct answer</div>
+        </div>
+        <div class="question-container">
+            <div class="question">Which storage device uses magnetic disks to store data?</div>
+            <div class="user-answer">Your answer: Not answered</div>
+            <div class="correct-answer">Correct answer</div>
+        </div>
+        <div class="question-container">
+            <div class="question">Which storage device uses magnetic disks to store data?</div>
+            <div class="user-answer">Your answer: Not answered</div>
+            <div class="correct-answer">Correct answer</div>
+        </div>
+        <div class="question-container">
+            <div class="question">Which storage device uses magnetic disks to store data?</div>
+            <div class="user-answer">Your answer: Not answered</div>
+            <div class="correct-answer">Correct answer</div>
+        </div>
+        <div class="question-container">
+            <div class="question">Which storage device uses magnetic disks to store data?</div>
+            <div class="user-answer">Your answer: Not answered</div>
+            <div class="correct-answer">Correct answer</div>
+        </div>
+        <buttom class="retake-btn">Retake quiz</buttom>
+    </div>
+    <script>
+        let quizData = [
+            {
+                question: "What is the primary function of a hard drive in a computer system?",
+                options: ["To process data", "To store data permanently", "To transfer data between devices", "To display images on the monitor"],
+                correct: "To store data permanently",
+            },
+            {
+                question: "Which type of hard drive uses spinning magnetic disks to store data?",
+                options: ["Solid-state drive (SSD)", "Hard disk drive (HDD)", "Flash drive", "External drive"],
+                correct: "Hard disk drive (HDD)",
+            },
+            {
+                question: "What does SSD stand for in the context of storage devices?",
+                options: ["Secure Storage Device", "Solid-State Drive", "Static Storage Drive", "Standard Storage Disk"],
+                correct: "Solid-State Drive",
+            },
+            {
+                question: "Which type of storage device is faster in data access speed?",
+                options: ["HDD", "SSD", "Floppy disk", "Optical disk"],
+                correct: "SSD",
+            },
+            {
+                question: "What is the typical interface used to connect modern hard drives to a computer?",
+                options: ["SATA", "USB 2.0", "VGA", "Parallel Port"],
+                correct: "SATA",
+            },
+        ];
+
+        const quizContainer = document.querySelector(".quiz-container");
+        const questionElement = document.querySelector(".quiz-container .question");
+        const options = document.querySelector(".quiz-container .options");
+        const nextBtn = document.querySelector(".quiz-container .next-btn");
+        const quizResult = document.querySelector(".quiz-result");
+        let questionNumber = 0;
+        let score = 0;
+        const Max_Questions = 5;
+        let timerInterval;
+
+        const shuffleArray = array => {
+            return array.slice().sort(() => Math.random() - 0.5);
+        };
+
+        quizData = shuffleArray(quizData);
+
+        const resetLocalStorage = () => {
+            for (let i = 0; i < Max_Questions; i++) {
+                localStorage.removeItem(`userAnswer_${i}`);
+            }
+        };
+
+        const checkAnswer = (e) => {
+            let userAnswer = e.target.textContent;
+            if (userAnswer == quizData[questionNumber].correct) {
+                score++;
+                e.target.classList.add("correct");
+            } else {
+                e.target.classList.add("incorrect");
+            }
+            localStorage.setItem(`userAnswer_${questionNumber}`, userAnswer);
+
+            let allOptions = document.querySelectorAll(".quiz-container .option");
+            allOptions.forEach(o => {
+                o.classList.add("disabled");
+            });
+        };
+
+        const createQuestion = () => {
+            clearInterval(timerInterval);
+
+            let secondsLeft = 9;
+            const timerDisplay = document.querySelector(".quiz-container .timer");
+            timerDisplay.classList.remove("danger");
+
+            timerDisplay.textContent = `Timer Left: 10 seconds`;
+
+            timerInterval = setInterval(() => {
+                timerDisplay.textContent = `Time Left: ${secondsLeft.toString().padStart(2, 0)} seconds`;
+                secondsLeft--;
+
+                if (secondsLeft < 3) {
+                    timerDisplay.classList.add("danger");
+                }
+
+                if (secondsLeft < 0) {
+                    clearInterval(timerInterval);
+                    displayNextQuestion();
+                }
+
+            }, 1000);
+
+            options.innerHTML = '';
+            questionElement.innerHTML = `<span class='question-number'> ${questionNumber + 1}/${Max_Questions}</span>${quizData[questionNumber].question}`;
+
+            const shuffledOptions = shuffleArray(quizData[questionNumber].options);
+
+            shuffledOptions.forEach((o) => {
+                const option = document.createElement("button");
+                option.classList.add("option");
+                option.innerHTML = o;
+                option.addEventListener("click", (e) => {
+                    checkAnswer(e);
+                });
+                options.append(option);
+            });
+        };
+
+        const retakeQuiz = () => {
+            questionNumber = 0;
+            score = 0;
+            quizData = shuffleArray(quizData);
+            resetLocalStorage();
+
+            createQuestion();
+            quizResult.style.display = "none";
+            quizContainer.style.display = "block";
+
+        };
+        const displayQuizResult = () => {
+            quizResult.style.display = "flex";
+            quizContainer.style.display = "none";
+            quizResult.innerHTML = "";
+
+            const resultHeading = document.createElement("h2");
+            resultHeading.innerHTML = `You have scored ${score} out of ${Max_Questions}.`;
+            quizResult.appendChild(resultHeading);
+
+            for (let i = 0; i < Max_Questions; i++) {
+                const resultItem = document.createElement("div");
+                resultItem.classList.add("question-container");
+
+                const userAnswer = localStorage.getItem(`userAnswer_${i}`);
+                const correctAnswer = quizData[i].correct;
+
+                let answeredCorrectly = userAnswer == correctAnswer;
+
+                if (answeredCorrectly) {
+                    resultItem.classList.add("correct");
+                } else {
+                    resultItem.classList.add("incorrect");
+                }
+
+                resultItem.innerHTML = `
+                    <div class="question">Question ${i + 1}: ${quizData[i].question}</div>
+                    <div class="user-answer">Your answer: ${userAnswer || "Not answered"}</div>
+                    <div class="correct-answer">Correct answer: ${correctAnswer}</div>`;
+
+                quizResult.appendChild(resultItem);
+            }
+
+            const retakeBtn = document.createElement("button");
+            retakeBtn.classList.add("retake-btn");
+            retakeBtn.innerHTML = 'Retake Quiz';
+            retakeBtn.addEventListener("click", retakeQuiz);
+            quizResult.appendChild(retakeBtn);
+        };
+
+        createQuestion();
+
+        const displayNextQuestion = () => {
+            if (questionNumber >= Max_Questions - 1) {
+                displayQuizResult();
+                return;
+            }
+            questionNumber++;
+            createQuestion();
+        };
+
+        nextBtn.addEventListener("click", displayNextQuestion);
+
+    </script>
+
+</body>
+</html>

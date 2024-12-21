@@ -1,0 +1,66 @@
+body {
+    background-color: #b066cb;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: aliceblue;
+  }
+  
+  .content {
+    display: flex;
+    width: 100%; /* Adjust container width */
+    height: 100vh; /* Adjust container height */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .register {
+    background-color: #b066cb;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 70% 0, 30% 100%, 0 100%);
+  }
+  
+  .login {
+    position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #320546;
+      clip-path: polygon(70% 0, 100% 0, 100% 100%, 30% 100%);
+  }
+h2{
+    text-align: center;
+}
+  .login-box{
+    position: relative;
+    top: -450px;
+    
+    width: 550px;
+  
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .box.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+  .register-box{
+    width: 80%;
+  
+  }
+
+  .box{
+    margin: 100px auto;
+    width: 500px;
+    position: relative;
+    right: 25%;
+  }

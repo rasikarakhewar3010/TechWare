@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/css1.css">
+    <link rel="icon" href="./assets/img/TechWare-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>TechWare - Mouse</title>
+    <style>
+        body {
+            background: linear-gradient(-45deg, #7d2b96, #af80e5, #ab23d5, #23d5ab);
+            background-size: 3000% 3000%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .hide-btn {
+            padding: 5px 6px;
+            margin: 5px;
+            width: 80px;
+            height: 35px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="./assets/img/TechWare-logo.jpg" alt="TechWare Logo" class="logo">
+        <nav>
+            <a href="./login.html" class="login" target="_top">Login/Sign Up</a>
+            <button onclick="lightMode()" class="login">Light Mode</button>
+            <button onclick="darkMode()" class="login">Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>TechWare - Mouse</h1>
+        <hr>
+        
+        <section class="box1">
+            <a href="./index.html">Home</a>
+            <a href="./_con.html">Contact Us</a>
+            <a href="./Exercises.html">Exercise</a>
+            <a href="./3D_Animation.html">Goal</a>
+        </section>
+        <hr>
+        
+        <button id="hideButton" class="hide-btn">Menu</button>
+        <aside id="asideSection">
+            <section class="box2">
+                <a href="./printer.html">PRINTER</a>
+                <hr>
+                <a href="#">CPU</a>
+                <hr>
+                <a href="./mouse.html">MOUSE</a>
+                <hr>
+                <a href="./motherboard.html">MOTHERBOARD</a>
+                <hr>
+                <a href="./ram.html">RAM</a>
+                <hr>
+                <a href="#">ROM</a>
+            </section>
+        </aside>
+
+        <div class="content">
+            <div class="printer" id="mouse-info">
+                <div class="info" data-aos="slide-up">
+                    <h1>Mouse</h1>
+                    <p>
+                        A computer mouse is an input device that allows a user to interact with a computer by controlling the on-screen cursor. It has various forms and functions, with mechanical, optical, and wireless versions available.
+                    </p><br>
+                    <p class="video-reference"><b>Refer to this video:</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a_MouseVideoID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+                    <a href="./Mouse_video.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+
+                <div class="history" data-aos="slide-up">
+                    <h1>History of the Mouse</h1>
+                    <p>
+                        The computer mouse was invented in the 1960s by Douglas Engelbart. Initially, it was a wooden device with two metal wheels. Since then, it has evolved to include features such as optical sensors, wireless connectivity, and multiple buttons to enhance user interaction.
+                    </p><br>
+                    <p class="video-reference"><b>Refer to this video:</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a_HistoryMouseVideoID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+                    <a href="./Mouse_history.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+
+                <div class="type" data-aos="slide-up">
+                    <h1>Types of Mice</h1>
+                    <h3>1. Mechanical Mouse</h3>
+                    <p>Uses a ball to detect motion, common in early computer designs but now largely replaced by optical mice.</p>
+                    <h3>2. Optical Mouse</h3>
+                    <p>Uses an LED sensor to detect movement on a surface, providing higher precision and durability.</p>
+                    <h3>3. Laser Mouse</h3>
+                    <p>Similar to the optical mouse but uses a laser for more accurate tracking, especially on smooth surfaces.</p>
+                    <h3>4. Wireless Mouse</h3>
+                    <p>Connects to a computer wirelessly via Bluetooth or a USB receiver, offering more mobility.</p><br>
+                    <p class="video-reference"><b>Refer to this video:</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a_TypesMouseVideoID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+                    <a href="./Mouse_types.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+
+                <div class="components" data-aos="slide-up">
+                    <h1>Mouse Components</h1>
+                    <ul>
+                        <li><b>Sensor:</b> Detects movement and translates it to on-screen cursor movement.</li>
+                        <li><b>Buttons:</b> Typically includes left, right, and additional programmable buttons for enhanced control.</li>
+                        <li><b>Scroll Wheel:</b> Allows for vertical scrolling through content.</li>
+                        <li><b>Wireless Transmitter:</b> For wireless mice, connects to a computer via Bluetooth or USB receiver.</li>
+                    </ul><br>
+                    <p class="video-reference"><b>Refer to this video:</b></p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a_ComponentsMouseVideoID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <br>
+                    <a href="./Mouse_components.mp4" download="video" class="download-btn">Download <i class="fa fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

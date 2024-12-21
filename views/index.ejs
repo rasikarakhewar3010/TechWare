@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css1.css">
+    <link rel="icon" href="/TechWare-logo.jpg">
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>TechWare</title>
+    
+
+</head>
+<body>
+
+    <header class="head">
+    <div class="first">
+        <a href="/index"><img src="/TechWare-logo.jpg" alt="TechWare Logo" class="logo"></a>
+        <nav>
+            
+            <section class="box1">
+            <a href="/index">Home</a>
+            <a href="./_con.html.html">Contact US</a>
+            <a href="./Exercises.html">Exercise</a>
+            <a href="./3D_Animation.html">Gallery</a>
+            <% if (!currentUser) { %>
+                <a href="./login.html"  target="_top">Login/Sign Up</a>
+              <% } else { %>
+                    <a class="nav-link" href="#">Welcome, <%= currentUser.username %></a>
+                    <a class="nav-link" href="/logout">Log out</a>
+              <% } %>
+            <!-- <button onclick="lightMode()" class="login">Light Mode</button> -->
+            <!-- <button onclick="darkMode()" class="login">Dark Mode</button> -->
+        </section>
+        </nav>
+
+        <!-- for chatbot -->
+        
+            <!-- <script>
+window.embeddedChatbotConfig = {
+chatbotId: "wdAGcQsy-eqxvzu6J2itE",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="wdAGcQsy-eqxvzu6J2itE"
+domain="www.chatbase.co"
+defer>
+</script> -->
+        
+    </div>
+    </header>
+    <div class="first-container">
+        <div class="myContent" data-aos="zoom-in-up">
+        <img src="/TechWare-logo.jpg" alt="TechWare_logo" onload="loadImg()" class="mylogo">
+        <h1 class="home-head">TechWare</h1>
+        <!-- <p >(all about computer Hardware)</p> -->
+        <p>All about <span class="auto-type"></span></p>
+    </div>
+    </div>
+    <div class="second-container">
+        <div class="h1-second-container">
+            <h1>
+                Computer hardware  
+            </h1>
+        </div>
+        <div class="row1" data-aos="fade-up">
+            <a href="./printer.html"><div class="printer box" >
+                <img src="/printer.png" alt="#" class="img-printer">
+                <hr>
+                <a href="./index.html" class="a-tab-row">Printer</a>
+            </a>
+            </div>
+            <a href="./ram.html"><div class="ram box">
+                <img src="/ram.png" alt="#">
+                <hr>
+                <a href="./ram.html">RAM</a>
+            </div>
+        </a>
+        <a href="./motherboard.html"><div class="Motherboard box" >
+                <img src="/motherboard.png" alt="">
+                <hr>
+                <br>
+                <a href="./motherboard.html">MotherBoard</a>
+            </div>
+        </a>
+            <a href="./cpu.html"><div class="cpu box">
+                <img src="/cpu.png" alt="#">
+                <hr>
+                <a href="#">CPU</a>
+            </div></a>
+
+        </div>
+        <div class="row2" data-aos="fade-up">
+            <a href="./mouse.html"><div class="mous box">
+                <img src="/mouse.png" alt="">
+                <hr>
+                <a href="">MOUSE</a>
+            </div></a>
+
+            <a href="./rom.html"><div class="rom box">
+                <img src="/icons8-rom-64.png" alt="">
+                <hr>
+                <a href="#">ROM</a>
+            </div></a>
+
+            <a href="./hardDrive.html"><div class="kk box">
+                <img src="/hard-drive.png" alt="">
+                <hr>
+                <a href="#">HARD Drive</a>
+            </div></a>
+
+            <a href="./keyboard.html"><div class="ak box">
+                <img src="/keyboard.png" alt="keyboard">
+                <hr>
+                <a href="./keyboard.html">KEYBOARD</a>
+            </div></a>
+
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>Email: rasikarakhewar3010@gmail.com </p>
+
+          </div>
+          <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="./index.html">Home</a>
+                <li><a href="./_con.html.html">Contact US</a></li>
+                <li><a href="./Exercises.html">Exercise</a></li>
+                <li><a href="./3D_Animation.html">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="footer-section social">
+            <h2>Follow Us</h2>
+            <a href="https://github.com/rasikarakhewar3010" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/rasika-rakhewar-2a5158256?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOoYti7OdTqSrmkBywu381A%3D%3D" target="_blank"><img src="data:image/png;base64,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" alt="LinkedIn"></a>
+            <a href="https://github.com/t-emit" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/siddiqui-talatunnisa-ameenuddin-7a2b00258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="data:image/png;base64,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" alt="LinkedIn"></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Your Website. All Rights Reserved. </p>
+        </div>
+      </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="/home.js"></script>
+    <script src="/script.js"></script>
+
+    <!-- script for auto type animation -->
+    <script>
+        var typed = new Typed(".auto-type",{
+    strings : [" Computer Hardware"],
+    typeSpeed : 150,
+    backSpeed : 150,
+    loop : true
+    });                    
+    </script>
+    
+    <!-- script for on scroll animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
