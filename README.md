@@ -55,3 +55,7 @@ TechWare is built using the following technologies:
 - Participate in exercises to learn how to install and use various hardware devices.
 - View the gallery for a visual representation of hardware products.
 
+
+## 📝 Overview
+
+https://github.com/user-attachments/assets/69963681-02fa-4939-a8dc-760142932b0b
